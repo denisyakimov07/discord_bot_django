@@ -15,7 +15,6 @@ class _Environment:
         self.DB_USER = os.getenv('DB_USER')
         self.DB_PASSWORD = os.getenv('DB_PASSWORD')
         self.DB_DATABASE = os.getenv('DB_DATABASE')
-        self.DB_DATABASE_TYPE = os.getenv('DB_DATABASE_TYPE')
         self.DB_PORT = os.getenv('DB_PORT')
 
         '''API_PASSWORD'''
