@@ -5,7 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY ./ .
-RUN sudo apt-get install libmysqlclient-dev
+RUN apt-get install libmysqlclient-dev
 RUN pip install -r requirements.txt
 
 EXPOSE 8000
