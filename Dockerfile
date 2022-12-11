@@ -5,7 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY ./ .
-RUN apk add --update libmysqlclient-dev
+RUN set apt-get libmysqlclient-dev
 RUN pip install -r requirements.txt
 
 EXPOSE 8000
