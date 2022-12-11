@@ -24,12 +24,6 @@ class _Environment:
         self.DEBUG_STATUS = os.getenv('DEBUG_STATUS')
         self.SECRET_KEY = os.getenv('SECRET_KEY')
 
-
-        '''API_PASSWORD'''
-        self.TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
-        self.TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
-
-
         """GMAIL"""
         self.MAIL_SERVER = os.getenv('MAIL_SERVER')
         self.MAIL_PORT = os.getenv('MAIL_PORT')
@@ -38,11 +32,6 @@ class _Environment:
         self.MAIL_USERNAME = os.getenv('MAIL_USERNAME')
         self.MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
 
-        self.SCHEDULER_KEY = os.getenv('SCHEDULER_KEY')
-
-        self.BITLY = os.getenv('BITLY')
-
-        self.ZEN_TOKEN = os.getenv('ZEN_TOKEN')
 
 __environment = _Environment()
 
